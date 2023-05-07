@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile page - SocialBook</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f4c1b1feb3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a href="index.html">
+        <img src="logo2.png" class="logo" />
+        </a>
+        <ul>
+          <li><img src="notification.png" /></li>
+          <li><img src="inbox.png" /></li>
+          <li><img src="video.png" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="search.png" />
+          <input type="text" placeholder="search" />
+        </div>
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+          <img src="profile-pic.png" />
+        </div>
+      </div>
+      <!----------- settings-menu --------->
+      <div class="settings-menu">
+        <div id="dark-btn">
+          <span></span>
+        </div>
+
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="profile-pic.png" alt="" />
+            <div>
+              <p>Jhon Nicholson</p>
+              <a href="profile.html">See your profile</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="feedback.png" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve new design</a>
+            </div>
+          </div>
+          <hr />
+          <div class="settings-links">
+            <img src="setting.png" alt="" class="settings-icon" />
+            <a href="#">
+              Settings & Privacy
+              <img src="arrow.png" alt="" width="10px" />
+            </a>
+          </div>
+          <div class="settings-links">
+            <img src="help.png" alt="" class="settings-icon" />
+            <a href="#">
+              Help & Support
+              <img src="arrow.png" alt="" width="10px" />
+            </a>
+          </div>
+          <div class="settings-links">
+            <img src="display.png" alt="" class="settings-icon" />
+            <a href="#">
+              Display & Accessibility
+              <img src="arrow.png" alt="" width="10px" />
+            </a>
+          </div>
+          <div class="settings-links">
+            <img src="logout.png" alt="" class="settings-icon" />
+            <a href="#">
+              Logout
+              <img src="arrow.png" alt="" width="10px" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- profile page -->
+
+    <div class="profile-container">
+      <img src="cover.png" alt="" class="cover-img" />
+      <div class="profile-details">
+        <div class="pd-left">
+          <div class="pd-row">
+            <img src="profile.png" alt="" class="pd-image" />
+            <div>
+              <h3>Jack Nicholson</h3>
+              <p>120 Friends - 20 mutual</p>
+              <img src="member-1.png" alt="" />
+              <img src="member-2.png" alt="" />
+              <img src="member-3.png" alt="" />
+              <img src="member-4.png" alt="" />
+              <img src="member-5.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-right">
+          <button type="button">
+            <img src="add-friends.png" alt="" /> Friends
+          </button>
+          <button type="button">
+            <img src="message.png" alt="" /> Message
+          </button>
+          <br>
+          <a href="#"><img src="more.png" alt="" /></a>
+        </div>
+      </div>
+      
+      <div class="profile-info">
+        <div class="info-col">
+
+          <div class="profile-intro">
+            <h3>Intro</h3>
+            <p class="intro-text">|| अंतः अस्ति प्रारंभ || <br>
+              || लगाव ही पीड़ा है, करुणा ही क्रूरता है, और अंत ही प्रारंभ ||
+              <img src="feeling.png" >
+            </p>
+            <hr>
+            <ul>
+              <li><img src="profile-job.png" alt=""> Professional Crypto Trader</li>
+              <li><img src="profile-study.png" alt=""> Studied at Newton School</li>
+              <li><img src="profile-study.png" alt=""> Went to Mittal International School</li>
+              <li><img src="profile-home.png" alt=""> Lives in Kota, Rajasthan, India</li>
+              <li> <img src="profile-location.png" alt=""> From Rajasthan, India</li>
+            </ul>
+          </div>
+
+          <div class="profile-intro">
+            <div class="title-box">
+              <h3>Photos</h3>
+              <a href="">All Photos</a>
+            </div>
+
+            <div class="photo-box">
+              <div><img src="photo1.png" alt=""></div>
+              <div><img src="photo2.png" alt=""></div>
+              <div><img src="photo3.png" alt=""></div>
+              <div><img src="photo4.png" alt=""></div>
+              <div><img src="photo5.png" alt=""></div>
+              <div><img src="photo6.png" alt=""></div>
+            </div>
+          </div>
+
+          <div class="profile-intro">
+            <div class="title-box">
+              <h3>Friends</h3>
+              <a href="">All Friends</a>
+            </div>
+            <p>1200 (20 mutual)</p>
+            <div class="friends-box">
+              <div><img src="member-1.png" ><p>Joseph n</p></div>
+              <div><img src="member-2.png" ><p>Nathan N</p></div>
+              <div><img src="member-3.png" ><p>George D</p></div>
+              <div><img src="member-4.png" ><p>Francis L</p></div>
+              <div><img src="member-5.png" ><p>Anthony E</p></div>
+              <div><img src="member-6.png" ><p>Michael A</p></div>
+              <div><img src="member-7.png" ><p>Edward M</p></div>
+              <div><img src="member-8.png" ><p>Brandon C</p></div>
+              <div><img src="member-9.png" ><p>James Doe</p></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="post-col">
+          <div class="write-post-container">
+            <div class="user-profile">
+              <img src="profile-pic.png" alt="" />
+              <div>
+                <p>Jhon Nicholson</p>
+                <small>Public <i class="fa-solid fa-caret-down"></i></small>
+              </div>
+            </div>
+            <div class="post-input-container">
+              <textarea
+                rows="3"
+                placeholder="What's on your mind, John?"
+              ></textarea>
+              <div class="add-post-links">
+                <a href="#"><img src="live-video.png" alt="" />Live Video</a>
+                <a href="#"><img src="photo.png" alt="" />Photo/Video</a>
+                <a href="#"><img src="feeling.png" alt="" />Feeling/Activity</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="profile-pic.png" alt="" />
+                <div>
+                  <p>Jhon Nicholson</p>
+                  <span>June 24 2022, 13:40 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+            </div>
+            <p class="post-text">
+              Subscribe <span>@motivationmashup</span> YouTube channel to watch
+              more videos on political content.
+              <a href="#">#motivationmashup</a>
+              <a href="#">#motivationmashup</a>
+            </p>
+            <img src="feed-image-1.png" class="post-img" alt="" />
+  
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="like-blue.png" alt="" /> 120</div>
+                <div><img src="comments.png" alt="" /> 45</div>
+                <div><img src="share.png" alt="" />20</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="profile-pic.png" alt="" />
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="profile-pic.png" alt="" />
+                <div>
+                  <p>Jhon Nicholson</p>
+                  <span>June 24 2022, 13:40 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+            </div>
+            <p class="post-text">
+              Like & Subscribe this video with friends, tag
+              <span>@motivationmashup</span> facebook page on your post. Ask your
+              in the comments
+              <a href="#">#motivationmashup</a>
+              <a href="#">#motivationmashup</a>
+            </p>
+            <img src="feed-image-2.png" class="post-img" alt="" />
+  
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="like.png" alt="" /> 120</div>
+                <div><img src="comments.png" alt="" /> 45</div>
+                <div><img src="share.png" alt="" />20</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="profile-pic.png" alt="" />
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="profile-pic.png" alt="" />
+                <div>
+                  <p>Jhon Nicholson</p>
+                  <span>June 24 2022, 13:40 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+            </div>
+            <p class="post-text">
+              Like & Subscribe this video with friends, tag
+              <span>@motivationmashup</span> facebook page on your post. Ask your
+              in the comments
+              <a href="#">#motivationmashup</a>
+              <a href="#">#motivationmashup</a>
+            </p>
+            <img src="feed-image-3.png" class="post-img" alt="" />
+  
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="like.png" alt="" /> 120</div>
+                <div><img src="comments.png" alt="" /> 45</div>
+                <div><img src="share.png" alt="" />20</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="profile-pic.png" alt="" />
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="profile-pic.png" alt="" />
+                <div>
+                  <p>Jhon Nicholson</p>
+                  <span>June 24 2022, 13:40 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+            </div>
+            <p class="post-text">
+              Like & Subscribe this video with friends, tag
+              <span>@motivationmashup</span> facebook page on your post. Ask your
+              in the comments
+              <a href="#">#motivationmashup</a>
+              <a href="#">#motivationmashup</a>
+            </p>
+            <img src="feed-image-4.png" class="post-img" alt="" />
+  
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="like.png" alt="" /> 120</div>
+                <div><img src="comments.png" alt="" /> 45</div>
+                <div><img src="share.png" alt="" />20</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="profile-pic.png" alt="" />
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="profile-pic.png" alt="" />
+                <div>
+                  <p>Jhon Nicholson</p>
+                  <span>June 24 2022, 13:40 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+            </div>
+            <p class="post-text">
+              Like & Subscribe this video with friends, tag
+              <span>@motivationmashup</span> facebook page on your post. Ask your
+              in the comments
+              <a href="#">#motivationmashup</a>
+              <a href="#">#motivationmashup</a>
+            </p>
+            <img src="feed-image-5.png" class="post-img" alt="" />
+  
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="like.png" alt="" /> 120</div>
+                <div><img src="comments.png" alt="" /> 45</div>
+                <div><img src="share.png" alt="" />20</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="profile-pic.png" alt="" />
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <p>Copyright 2023 - Motivationmashup Youtube Channel</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
